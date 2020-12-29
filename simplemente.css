@@ -1,0 +1,113 @@
+* {
+  padding: 10px;
+}
+
+span {
+  font-weight: bold;
+}
+
+#encabezado {
+  background-color: #b3b3b3;
+  font-size: 30px !important;
+  font-family: revert;
+  height: 55px;
+  vertical-align: middle;
+  padding: 25px 0px 25px 20px;
+  margin-bottom: 9px;
+}
+
+#encabezado h1 {
+  margin-top: auto;
+  font-stretch: semi-condensed;
+}
+
+#cuerpo {
+  background-color: #cccccc;
+  font-size: 38px;
+  height: 380px;
+}
+
+#cuerpo p {
+  margin: 25px;
+  line-height: normal;
+}
+
+#base {
+  background-color: #ffff9a;
+}
+
+#desktop {
+  background-color: khaki;
+  margin-top: 15px;
+  font-size: xx-large;
+}
+
+#tablet {
+  display: none;
+}
+
+#mobil {
+  display: none;
+}
+
+@media only screen and (max-width: 1023px) {
+  /* caracteristicas para tablet */
+  #encabezado {
+    background-color: lawngreen;
+    /*para testing en tamaño */
+    font-size: 50px;
+  }
+  #desktop {
+    display: none;
+  }
+  #mobil {
+    display: none;
+  }
+  #cuerpo p {
+    margin: 5px;
+    line-height: normal;
+    font-size: xx-large;
+  }
+  #cuerpo {
+    background-color: #cccccc;
+    font-size: 38px;
+    height: 318px;
+  }
+  #tablet {
+    display: inherit;
+    background-color: khaki;
+    margin-top: 15px;
+    font-size: xx-large;
+  }
+  #tablet p {
+    margin: auto;
+    font-size: x-large;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* para mobil */
+  #encabezado {
+    background-color: #cccccc;
+  }
+  #encabezado h1 {
+    font-size: 50px;
+    align-self: center;
+  }
+  #cuerpo p {
+    margin: 0px;
+    font-size: xx-large;
+  }
+  #desktop {
+    display: none;
+  }
+  #tablet {
+    display: none;
+  }
+  #mobil {
+    display: inherit;
+    background-color: khaki;
+    margin-top: 15px;
+    font-size: x-large;
+  }
+}
